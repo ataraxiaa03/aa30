@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3c8ca;
+}
+.imgcora{
+    border-radius: 15px;
+    width:25%;
+    position: absolute;
+    z-index: -1;
+    font-weight: bold;
+}
+.greetings{
+    font-size: 6rem;
+    font-weight: 900;
+}
+.greetings > span{
+    margin: 0 auto;
+    animation: glow 2s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #f9c5c8, 0 0 50px #f9c5c8, 0 0 100px #ff5757;
+    }
+    10%, 90%{
+        color: #f8f0f0;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+
+.description{
+    font-size: 2vw;
+    margin-bottom: 20px;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+@media screen and (max-width:574px){
+    .greetings{
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .description{
+        font-size: 2rem;
+    }
+    
+    .button a{
+        font-size: .5rem;
+    }
+
+}
+
+.description{
+    color: #ff5757;
+    font-size: 1.5rem;
+    text-align: center;
+}
+@media screen and (max-width: 574px){
+    .description{
+        font-size: 1.2rem;
+        align-content: center;
+        text-align: center;
+    }
+    .button button{
+        font-size: 1.5em;
+    }
+    .btnsi1{
+        margin: 50px;
+    }
+    .btnno1{
+        margin: 10px;
+    }
+    .btnsi2{
+        margin: 70px;
+    }
+    .btnno2{
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 412px){
+    .description{
+        font-size: 1.2rem;
+        align-content: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;}
+
+    .btnsi1{
+        margin: 50px;
+        font-size: 10px;}
+    .btnno1{
+        margin: 10px;
+        font-size: 10px;
+    }
+    .btnsi2{
+        margin: 70px;
+    }
+    .btnno2{
+        margin: 10px;
+    }
+}
+/* Estilo para el botón */
+.button button {
+    font-weight: 900;
+    font-style: normal;
+    transition: all 0.1s linear;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: solid 2px #ff5757;
+    border-radius: 10px;
+    color: #ff5757;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 20px;
+    padding: 18px;
+    line-height: 2em;
+    text-decoration: none;
+    min-width: 120px;
+    cursor: pointer;
+  }
+
+  /* Estilo para el enlace dentro del botón */
+  .button button a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del botón */
+    font-size: 20px;
+}
+
+  /* Efecto de resplandor al pasar el cursor sobre el botón */
+.button button:hover {
+    background-color: #fc9d9d; /* Cambia el color de fondo al pasar el mouse a naranja */
+    box-shadow: 0 0 5px #ff5757, 0 0 20px #ff5757, 0 0 30px #ff5757; /* Efecto de resplandor amarillo */
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#message-container {
+    position: relative;
+    background-color: plum;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.455);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    overflow-x: hidden;
+    transition: height 1.5s ease;
+
+    max-height: calc(100vh - 100px);
+    min-width: 350px;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+#message-container::-webkit-scrollbar {
+    display: none;
+}
+
+#message {
+
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(243, 240, 243);
+    text-align: center;
+}
+
+.btnflor{
+    position: absolute;
+    left: 50%; /* Centra el botón horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centro correctamente */
+    align-self: center;
+    display: block;
+    padding: 0.5rem 1rem;
+    position: absolutes;
+    width: 50%;
+    margin: 0 auto;
+    font-weight: 700;
+    transition: all 0.1s linear;
+    background-color: transparent;
+    border: solid 2px #52065c;
+    border-radius: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+}
